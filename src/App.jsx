@@ -21,7 +21,9 @@ import GrowSectionFramerComponent from './framer B/grow-section'
 import AllInOneSolutionFramerComponent from './framer C/all-in-one-solution'
 
 import PricingFramerComponent from './framer R/pricing'
-
+import React from 'react';
+import ROICalculator from './components/ROICalculator';
+import './index.css'; // Ensure tailwind styles are imported
 function App() {
   const sectionStyle = { width: '100%', maxWidth: 1200, margin: '0 auto' }
 
@@ -43,7 +45,9 @@ function App() {
       <FaqFramerComponent.Responsive style={sectionStyle}/>
       <NewsletterFramerComponent.Responsive style={sectionStyle}/>
       <FooterFramerComponent.Responsive style={sectionStyle}/>
-     
+      <main>
+        <ROICalculator />
+      </main>
     </div>
   )
 }
